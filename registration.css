@@ -14,18 +14,19 @@
 }
 .form-box {
   width: 380px;
-  height: 600px;
-  position: relative;
+  height: 800px;
+  position: absolute;
   margin: 6% auto;
   background: #fff;
   border-radius: 50px;
-  overflow-y: scroll;
+  top: -50px;
+  left: 770px;
 }
 .button-box {
-  width: 220px;
+  width: 280px;
   margin: 35px auto;
   position: relative;
-  box-shadow: 0 0 20px 9px #ff61241f;
+  
   border-radius: 30px;
 }
 .toggle-btn {
@@ -58,7 +59,7 @@
   border-radius: 50%;
 }
 .input-group {
-  top: 20px;
+  top: 60px;
   position: absolute;
   width: 280px;
   transition: 0.5s;
@@ -103,4 +104,14 @@ span {
 }
 #teacher-login {
   background: linear-gradient(to right, #72bcd4, #d4ebf2);
+}
+#title{
+  font-size: 60px;
+  color: black;
+  font-family: cookie;
+  font-weight: bold;
+  position: absolute;
+  top: 30px;
+  left: 120px;
+  height: auto;
 }

@@ -7,17 +7,13 @@
   <body>
     <div class="hero">
       <div class="form-box">
-        <div class="button-box">
-          <div id="btn"></div>
-          <button type="button" class="toggle-btn" onclick="student()">
-            Student
-          </button>
-          <button type="button" class="toggle-btn" onclick="teacher()">
-            Teacher
-          </button>
-        </div>
+        <span id="title">Elevate.</span>
 
         <form id="student" class="input-group">
+          <select id="type" name="type" class="button-box">
+            <option value="student">Student</option>
+            <option value="teacher">Teacher</option>
+          </select>
           <input type = "text" class="input-field" placeholder="Email" required />
           <input
             type="text"
@@ -49,46 +45,50 @@
             placeholder="Standard/Department "
             required
           />
+          <input
+            type="number"
+            class="input-field"
+            id ="roll"
+            name ="roll"
+            placeholder="Roll No"
+            required
+          />
+          <input
+            type="number"
+            class="input-field"
+            id ="acad"
+            name ="acad"
+            placeholder="Academic Year"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            id ="gender"
+            name ="gender"
+            placeholder="Gender"
+            required
+          />
+          <input
+            type="number"
+            class="input-field"
+            id ="age"
+            name ="age"
+            placeholder="Age"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            id ="blood"
+            name ="blood"
+            placeholder="Blood Group"
+            required
+          />
           <input type="checkbox" class="check-box" /><span>I agree to the <b>terms & condition</b></span>
-          <button type="submit" class="submit-btn">Register</button>
+          <button type="submit" class="submit-btn" id="teacher-login">Register</button>
         </form>
-        <form id="teacher" class="input-group">
-          <input type = "text" class="input-field" placeholder="Email" required />
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Name"
-            required
-          />
-          <input
-            type="password"
-            class="input-field"
-            placeholder="Password"
-            required
-          />
-          <input
-            type="password"
-            class="input-field"
-            placeholder="Confirm Password"
-            required
-          />
-          <input
-            type="text"
-            class="input-field"
-            placeholder="School/College Name"
-            required
-          />
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Standard/Department "
-            required
-          />
-          <input type="checkbox" class="check-box" /><span>I agree to the <b>terms & condition</b></span>
-          <button type="submit" class="submit-btn" id="teacher-login">
-            Register
-          </button>
-        </form>
+        
       </div>
     </div>
 
