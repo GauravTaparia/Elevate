@@ -6,7 +6,8 @@
 .hero {
   height: 100%;
   width: 100%;
-  background-image: url(banner.jpeg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(banner.jpeg);
   background-position: center;
   background-size: cover;
   position: absolute;
@@ -35,9 +36,6 @@
   border: 0;
   outline: none;
   position: relative;
-  font-family: "Cookie";
-  font-weight: bold;
-  font-size: 19px;
 }
 #btn {
   top: 0;
@@ -48,6 +46,7 @@
   background: linear-gradient(to right, #ff8068, #ffc0b4);
   border-radius: 30px;
   transition: 0.5s;
+  font-weight: bold;
 }
 .social-icons {
   margin: 30px auto;
@@ -87,9 +86,6 @@
   border: 0;
   outline: none;
   border-radius: 30px;
-  font-family: "Cookie";
-  font-weight: bold;
-  font-size: 25px;
 }
 .check-box {
   margin: 30px 10px 30px 0;
