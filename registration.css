@@ -18,9 +18,8 @@
   position: relative;
   margin: 6% auto;
   background: #fff;
-  padding: 5px;
-  overflow: hidden;
   border-radius: 50px;
+  overflow-y: scroll;
 }
 .button-box {
   width: 220px;
@@ -59,10 +58,11 @@
   border-radius: 50%;
 }
 .input-group {
-  top: 100px;
+  top: 20px;
   position: absolute;
   width: 280px;
   transition: 0.5s;
+  margin: 6px auto;
 }
 .input-field {
   width: 100%;
@@ -99,7 +99,7 @@ span {
   left: 50px;
 }
 #teacher {
-  left: 450px;
+  left: 50px;
 }
 #teacher-login {
   background: linear-gradient(to right, #72bcd4, #d4ebf2);
