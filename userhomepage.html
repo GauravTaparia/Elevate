@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Md Yaseen Ahmed">
     <title>User Dashboard.!</title>
+    <script src='https://meet.jit.si/external_api.js'></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="dashboard.css">
@@ -245,7 +246,7 @@
                 </div>
                 <li><a href="dashboard.php"><i class="fas fa-clipboard"></i>Dashboard</a></li>
                 <li><a href="dashboard.php?page=update_profile"><i class="fas fa-user-edit"></i> Update Profile</a></li>
-                <li><a href="video.html"><i class="fas fa-user-edit"></i> Create Meeting</a></li>
+                <li><a href="video.html" id="start"><i class="fas fa-user-edit"></i> Create Meeting</a></li>
             </ul>
         </div>
         <div class="col-sm-12 col-sm-offset-12 col-md-10 col-md-offset-2 main">
@@ -268,6 +269,32 @@
                     });
                 }
             </script>
+            <script>
+                var button = document.querySelector('#start');
+                var container = document.querySelector('#jitsi-container');
+                var api = null;
+                
+                button.addEventListener('click', () => {
+                    var possible = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                    var stringLength = 30;
+                
+                    function pickRandom() {
+                    return possible[Math.floor(Math.random() * possible.length)];
+                    }
+                
+                var randomString = Array.apply(null, Array(stringLength)).map(pickRandom).join('');
+                
+                    var domain = "meet.jit.si";
+                    var options = {
+                        "roomName": randomString,
+                        "parentNode": container,
+                        "width": 1900,
+                        "height": 900,
+                    };
+                    api = new JitsiMeetExternalAPI(domain, options);
+                });
+                
+                </script>
 
 </body>
 </html>
