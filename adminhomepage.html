@@ -18,8 +18,10 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
     <!-- Custom styles for this template -->
+    
     <link href="../css/dashboard.css" rel="stylesheet">
     <link rel="stylesheet" href="dashboard.css">
+    <link rel="stylesheet" href="subjectadditon.css" />
     <!--Custom Favicon -->
     <link rel="icon" type="image/png" sizes="64x64" href="../css/images/logo.png">
     <style>
@@ -250,7 +252,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </a>
-                <a class="navbar-brand text-white" style="font-family:'Acme';font-size:30px;color: white;" href="#">Welcome, Teacher</a>
+                <a class="navbar-brand text-white" style="font-family:'Acme';font-size:30px;color: white;padding-right: 750px;" href="#">Welcome, Teacher</a>
 
             </div>
             <ul class="nav navbar-nav navbar-right collapsed hide-on-med-and-down text-white hide-on-med" id="navbar">
@@ -263,19 +265,10 @@
     <div class="wrapper">
         <div class="sidebar col -l2 -s6">
             <ul>
-                <br>
-                <br>
-                <br>
-                <br>
-
-                <div>
-                    <a href="teacherprofile.html"><img class="img1" src="../css/images/logo.png" width="100" height="100" alt="not found" /></a>
-                    
-                </div>
-                <li><a href="dashboard.php"><i class="fas fa-clipboard"></i>Dashboard</a></li>
-                <li><a href="dashboard.php?page=manage_users"><i class="fas fa-users"></i>Students List</a></li>
+                <li><a href="adminhomepage.html"><i class="fas fa-clipboard"></i>Dashboard</a></li>
+                <li><a href="teacherprofile.html"><i class="fas fa-clipboard"></i>Profile</a></li>
                 <li><a href="video.html"><i class="fas fa-user-edit"></i> Create Meeting</a></li>
-                <li><a href="dashboard.php?page=add_fst"><i class="fas fa-plus"></i>Add Subject</a></li>
+                <li><a href="subjectadditon.html"><i class="fas fa-plus"></i>Add Subject</a></li>
             </ul>
         </div>
         <div class="col-sm-12 col-sm-offset-12 col-md-10 col-md-offset-2 main">
@@ -374,122 +367,7 @@
                         <h1 class="page-header label1" style="font-family: 'Bree serif', serif;">Dashboard</h1>
                         <section class="section">
                             <div class="container-fluid">
-                                <div class="row">
-                                    <div class="col-lg-3 col-md-3 col-sm-12 col-xs-12">
-                                        <a class="dashboard-stat11" href="dashboard.php?page=disp_s1">
-                                            <span class="number"><?php echo "$cs1"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 1th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat" href="dashboard.php?page=disp_s2">
-                                            <span class="number"><?php echo "$cs2"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 2nd sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat11" href="dashboard.php?page=disp_s3">
-                                            <span class="number"><?php echo "$cs3"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 3rd sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat" href="dashboard.php?page=disp_s4">
-                                            <span class="number"><?php echo "$cs4"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 4th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-
-
-
-                                </div>
-                                <!-- /.row -->
-                                <div class="row" style="margin-top:3%;">
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat" href="dashboard.php?page=disp_s5">
-                                            <span class="number"><?php echo "$cs5"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 5th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat11" href="dashboard.php?page=disp_s6">
-                                            <span class="number"><?php echo "$cs6"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 6th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 ">
-                                        <a class="dashboard-stat" href="dashboard.php?page=disp_s7">
-                                            <span class="number"><?php echo "$cs7"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 7th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat11" href="dashboard.php?page=disp_s8">
-                                            <span class="number"><?php echo "$cs8"; ?></span>
-                                            <span class="name">Subjects Listed<br />For 8th sem</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                </div>
-
-                                <!-- /.container-fluid -->
-
-                                <div class="row" style="margin-top:3%;">
-
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat1" href="dashboard.php?page=manage_users">
-                                            <span class="number counter"><?php echo "$count"; ?></span>
-                                            <span class="name">Students Registered<br />For Sem End Exam</span>
-                                            <span class="bg-icon"><i class="fa fa-users"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat1" href="dashboard.php?page=manage_users_fst">
-                                            <span class="number counter"><?php echo "$count1"; ?></span>
-                                            <span class="name">Students Registered<br />For Fastrack Exam</span>
-                                            <span class="bg-icon"><i class="fa fa-users"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
-                                    <!-- /.col-lg-3 col-md-3 col-sm-6 col-xs-12 -->
-                                    <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                                        <a class="dashboard-stat11" href="dashboard.php?page=manage_sub_fst">
-                                            <span class="number"><?php echo "$fst1"; ?></span>
-                                            <span class="name">Subjects Listed<br />For Fastrack</span>
-                                            <span class="bg-icon"><i class="fa fa-bars"></i></span>
-                                        </a>
-                                        <!-- /.dashboard-stat -->
-                                    </div>
+                                
 
                                 </div>
                             </div>
